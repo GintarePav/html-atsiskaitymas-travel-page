@@ -1,223 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JourneyJoy Travel</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <img src="images/logo.png" alt="green, blue and brown lines forming a wing" height="50"/>
-       <!-- istrinti height atributa kai rasysiu css -->
+      <nav class="navbar">
+        <div class="navbar__logo-container">
+          <img
+            src="images/logo.png"
+            class="navbar__logo"
+            alt="green, blue and brown lines forming a wing"
+            height="50"
+          />
+        </div>
         <h1>JourneyJoy Travel</h1>
-        <nav>
-            <ul>
-                <li><a href="/01-trip-orders.html">Order a Trip</a></li> 
-                <li><a href="/02-login.html">Login</a></li>
-                <li><a href="/03-personal-blog.html">Personal Blog</a></li>
-            </ul>
-        </nav>
+        <div class="navbar__link-container">
+          <ul class="navbar__link-list">
+            <li>
+              <a href="/01-trip-orders.html" class="navbar__link"
+                >Order a Trip</a
+              >
+            </li>
+            <li><a href="/02-login.html" class="navbar__link">Login</a></li>
+            <li>
+              <a href="/03-personal-blog.html" class="navbar__link"
+                >Personal Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <aside>
-        <nav>
-            <ul>
-                <li><a href="_index.html#travel-ideas">Travel Ideas</a></li>
-                <li><a href="_index.html#rental">Rental</a></li>
-                <li><a href="_index.html#tips-and-tricks">Tips &amp; Tricks</a></li>
-                <li><a href="_index.html#journal">Journal</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="_index.html#travel-ideas">Travel Ideas</a></li>
+          <li><a href="_index.html#rental">Rental</a></li>
+          <li><a href="_index.html#tips-and-tricks">Tips &amp; Tricks</a></li>
+          <li><a href="_index.html#journal">Journal</a></li>
+        </ul>
+      </nav>
     </aside>
     <main>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mf_nGEPIsQ8?si=9MYOedPg6-TUWfAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/Mf_nGEPIsQ8?si=9MYOedPg6-TUWfAA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
 
-        <section id="travel-ideas">
-            <h2>Travel Ideas</h2>
-            <!-- nuimti height atributa nuo img elementu kai darysiu css -->
-            <article>
-                <img src="https://res.cloudinary.com/simpleview/image/upload/v1634555140/clients/norway/Oslo_operahus_2_447c01a6-7d1c-4cd6-a87a-0c38e552a893.jpg" alt="oslo opera house with people walking on the roof" loading="lazy" height="300"/>
-                <h3>A week in Oslo, Norway</h3>
-                <p>
-                    Embark on an unforgettable journey to Oslo, the vibrant capital of Norway, with our exclusive travel package designed to immerse you in the city's rich culture, stunning landscapes, and Scandinavian charm. Upon arrival, you'll be greeted by the majestic beauty of Oslo's fjords, framed by lush greenery and sparkling waters, setting the stage for an unparalleled adventure. Begin your exploration with a guided tour of the city's iconic landmarks, including the renowned Vigeland Sculpture Park, where over 200 captivating sculptures by Gustav Vigeland adorn the sprawling grounds, showcasing the breadth and depth of human emotions.
-                </p>
-                <p>
-                    Delve deeper into Oslo's cultural heritage with visits to world-class museums such as the Viking Ship Museum and the Munch Museum, home to Edvard Munch's iconic masterpiece, "The Scream." Discover the city's thriving culinary scene with a food tour through the historic Grünerløkka district, where trendy cafes, artisanal bakeries, and traditional eateries offer a tantalizing array of flavors and delicacies to savor. Unwind and recharge amidst the tranquility of Oslo's parks and gardens, or embark on a scenic cruise along the Oslofjord, where panoramic views of the city's skyline and coastal landscapes await. With our meticulously crafted itinerary, you'll experience the best of Oslo's cultural treasures and natural splendor, creating memories to last a lifetime.
-                </p>
-                <button>&euro;1500</button>
-            </article>
+      <section id="travel-ideas">
+        <h2>Travel Ideas</h2>
+        <!-- nuimti height atributa nuo img elementu kai darysiu css -->
+        <article>
+          <img
+            src="https://res.cloudinary.com/simpleview/image/upload/v1634555140/clients/norway/Oslo_operahus_2_447c01a6-7d1c-4cd6-a87a-0c38e552a893.jpg"
+            alt="oslo opera house with people walking on the roof"
+            loading="lazy"
+            height="300"
+          />
+          <h3>A week in Oslo, Norway</h3>
+          <p>
+            Embark on an unforgettable journey to Oslo, the vibrant capital of
+            Norway, with our exclusive travel package designed to immerse you in
+            the city's rich culture, stunning landscapes, and Scandinavian
+            charm. Upon arrival, you'll be greeted by the majestic beauty of
+            Oslo's fjords, framed by lush greenery and sparkling waters, setting
+            the stage for an unparalleled adventure. Begin your exploration with
+            a guided tour of the city's iconic landmarks, including the renowned
+            Vigeland Sculpture Park, where over 200 captivating sculptures by
+            Gustav Vigeland adorn the sprawling grounds, showcasing the breadth
+            and depth of human emotions.
+          </p>
+          <p>
+            Delve deeper into Oslo's cultural heritage with visits to
+            world-class museums such as the Viking Ship Museum and the Munch
+            Museum, home to Edvard Munch's iconic masterpiece, "The Scream."
+            Discover the city's thriving culinary scene with a food tour through
+            the historic Grünerløkka district, where trendy cafes, artisanal
+            bakeries, and traditional eateries offer a tantalizing array of
+            flavors and delicacies to savor. Unwind and recharge amidst the
+            tranquility of Oslo's parks and gardens, or embark on a scenic
+            cruise along the Oslofjord, where panoramic views of the city's
+            skyline and coastal landscapes await. With our meticulously crafted
+            itinerary, you'll experience the best of Oslo's cultural treasures
+            and natural splendor, creating memories to last a lifetime.
+          </p>
+          <button>&euro;1500</button>
+        </article>
 
-            <article>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/04/4e/92/c5/old-market-square-oude.jpg" alt="leuven old market square with old buildings and restaurant umbrellas" loading="lazy" height="300"/>
-                <h3>Three Days in Leuven, Belgium</h3>
-                <p>
-                    Embark on an enchanting journey to Leuven, a picturesque city nestled in the heart of Belgium, with our meticulously curated travel package designed to immerse you in the city's rich history, vibrant culture, and architectural wonders. Begin your adventure with a guided walking tour through Leuven's charming cobblestone streets, where medieval facades and Gothic architecture transport you back in time. Explore the iconic landmarks of the city, including the awe-inspiring Leuven Town Hall with its ornate facade and towering spires, and the legendary University Library, home to centuries-old manuscripts and exquisite artwork.
-                </p>
-                <p>
-                    Indulge your senses with a culinary exploration of Leuven's gastronomic delights, from sampling traditional Belgian cuisine at cozy taverns and brasseries to savoring decadent chocolates and artisanal beers at local cafes and breweries. Experience the city's vibrant nightlife scene with a visit to the lively Oude Markt, known as the "longest bar in the world," where bustling cafes and bars line the historic square, offering a lively atmosphere and a taste of Belgian hospitality. With our exclusive travel package, you'll discover the timeless charm and hidden treasures of Leuven, creating memories to cherish for a lifetime.
-                </p>
-                <button>&euro;600</button>
-            </article>
+        <article>
+          <img
+            src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/04/4e/92/c5/old-market-square-oude.jpg"
+            alt="leuven old market square with old buildings and restaurant umbrellas"
+            loading="lazy"
+            height="300"
+          />
+          <h3>Three Days in Leuven, Belgium</h3>
+          <p>
+            Embark on an enchanting journey to Leuven, a picturesque city
+            nestled in the heart of Belgium, with our meticulously curated
+            travel package designed to immerse you in the city's rich history,
+            vibrant culture, and architectural wonders. Begin your adventure
+            with a guided walking tour through Leuven's charming cobblestone
+            streets, where medieval facades and Gothic architecture transport
+            you back in time. Explore the iconic landmarks of the city,
+            including the awe-inspiring Leuven Town Hall with its ornate facade
+            and towering spires, and the legendary University Library, home to
+            centuries-old manuscripts and exquisite artwork.
+          </p>
+          <p>
+            Indulge your senses with a culinary exploration of Leuven's
+            gastronomic delights, from sampling traditional Belgian cuisine at
+            cozy taverns and brasseries to savoring decadent chocolates and
+            artisanal beers at local cafes and breweries. Experience the city's
+            vibrant nightlife scene with a visit to the lively Oude Markt, known
+            as the "longest bar in the world," where bustling cafes and bars
+            line the historic square, offering a lively atmosphere and a taste
+            of Belgian hospitality. With our exclusive travel package, you'll
+            discover the timeless charm and hidden treasures of Leuven, creating
+            memories to cherish for a lifetime.
+          </p>
+          <button>&euro;600</button>
+        </article>
 
-            <article>
-                <img src="https://warsawtour.pl/wp-content/uploads/2023/03/Panorama-Warszawy-z-Widok-Towers-fot.-Filip-Kwiatkowski-1.jpg" alt="warsaw city skyline with the palace of culture and science in focus" loading="lazy" height="300"/>
-                <h3>A Weekend in Warsaw, Poland</h3>
-                <p>
-                    Embark on a captivating journey to Warsaw, the vibrant capital of Poland, with our expertly crafted travel package designed to immerse you in the city's rich history, dynamic culture, and architectural marvels. Begin your adventure with a guided tour through Warsaw's historic Old Town, where cobblestone streets, colorful facades, and medieval charm transport you back in time. Explore iconic landmarks such as the Royal Castle, meticulously reconstructed after World War II, and the picturesque Market Square, bustling with street performers, artisan shops, and cozy cafes offering traditional Polish delights.
-                </p>
-                <p>
-                    Indulge your senses with a culinary exploration of Warsaw's gastronomic scene, from sampling hearty pierogi and flavorful żurek soup to savoring decadent pastries and aromatic coffee in charming cafes and bakeries. Experience the city's vibrant arts and culture with visits to world-class museums like the POLIN Museum of the History of Polish Jews and the Warsaw Uprising Museum, offering immersive exhibits and insightful narratives of Poland's rich heritage. With our meticulously curated travel package, you'll discover the timeless allure and hidden treasures of Warsaw, creating memories to last a lifetime.
-                </p>
-                <button>&euro;300</button>
-            </article>
-        </section>
+        <article>
+          <img
+            src="https://warsawtour.pl/wp-content/uploads/2023/03/Panorama-Warszawy-z-Widok-Towers-fot.-Filip-Kwiatkowski-1.jpg"
+            alt="warsaw city skyline with the palace of culture and science in focus"
+            loading="lazy"
+            height="300"
+          />
+          <h3>A Weekend in Warsaw, Poland</h3>
+          <p>
+            Embark on a captivating journey to Warsaw, the vibrant capital of
+            Poland, with our expertly crafted travel package designed to immerse
+            you in the city's rich history, dynamic culture, and architectural
+            marvels. Begin your adventure with a guided tour through Warsaw's
+            historic Old Town, where cobblestone streets, colorful facades, and
+            medieval charm transport you back in time. Explore iconic landmarks
+            such as the Royal Castle, meticulously reconstructed after World War
+            II, and the picturesque Market Square, bustling with street
+            performers, artisan shops, and cozy cafes offering traditional
+            Polish delights.
+          </p>
+          <p>
+            Indulge your senses with a culinary exploration of Warsaw's
+            gastronomic scene, from sampling hearty pierogi and flavorful żurek
+            soup to savoring decadent pastries and aromatic coffee in charming
+            cafes and bakeries. Experience the city's vibrant arts and culture
+            with visits to world-class museums like the POLIN Museum of the
+            History of Polish Jews and the Warsaw Uprising Museum, offering
+            immersive exhibits and insightful narratives of Poland's rich
+            heritage. With our meticulously curated travel package, you'll
+            discover the timeless allure and hidden treasures of Warsaw,
+            creating memories to last a lifetime.
+          </p>
+          <button>&euro;300</button>
+        </article>
+      </section>
 
-        <section id="rental">
-            <h2>Rental</h2>
-            <table border="1">
-                <!-- nuimti height atributa nuo img elementu kai darysiu css -->
-                <thead>
-                    <th>Brand &amp; Model</th>
-                    <th>Photo</th>
-                    <th>1-day Price</th>
-                    <th>2-day Price</th>
-                    <th>3-day Price</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Toyota Corolla</td>
-                        <td><img src="images/toyota-corolla.jpg" alt="silver toyota corolla car on the road" loading="lazy" height="80"/></td>
-                        <td>&euro;50</td>
-                        <td>&euro;90</td>
-                        <td>&euro;120</td>
-                    </tr>
-                    <tr>
-                        <td>Volkswagen Golf</td>
-                        <td><img src="images/volkswagen-golf.jpg" alt="red volkswagen golf car on the road" loading="lazy" height="80"/></td>
-                        <td>&euro;60</td>
-                        <td>&euro;110</td>
-                        <td>&euro;150</td>
-                    </tr>
-                    <tr>
-                        <td>Ford Fiesta</td>
-                        <td><img src="images/ford-fiesta.jpg" alt="blue ford fiesta car in front of a modern house" loading="lazy" height="80"/></td>
-                        <td>&euro;55</td>
-                        <td>&euro;100</td>
-                        <td>&euro;135</td>
-                    </tr>
-                    <tr>
-                        <td>BMW 3 Series </td>
-                        <td><img src="images/bmw-3-series.jpg" alt="grey bmw 3 series car on the road" loading="lazy" height="80"/></td>
-                        <td>&euro;80</td>
-                        <td>&euro;150</td>
-                        <td>&euro;210</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <section id="rental">
+        <h2>Rental</h2>
+        <table border="1">
+          <!-- nuimti height atributa nuo img elementu kai darysiu css -->
+          <thead>
+            <th>Brand &amp; Model</th>
+            <th>Photo</th>
+            <th>1-day Price</th>
+            <th>2-day Price</th>
+            <th>3-day Price</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Toyota Corolla</td>
+              <td>
+                <img
+                  src="images/toyota-corolla.jpg"
+                  alt="silver toyota corolla car on the road"
+                  loading="lazy"
+                  height="80"
+                />
+              </td>
+              <td>&euro;50</td>
+              <td>&euro;90</td>
+              <td>&euro;120</td>
+            </tr>
+            <tr>
+              <td>Volkswagen Golf</td>
+              <td>
+                <img
+                  src="images/volkswagen-golf.jpg"
+                  alt="red volkswagen golf car on the road"
+                  loading="lazy"
+                  height="80"
+                />
+              </td>
+              <td>&euro;60</td>
+              <td>&euro;110</td>
+              <td>&euro;150</td>
+            </tr>
+            <tr>
+              <td>Ford Fiesta</td>
+              <td>
+                <img
+                  src="images/ford-fiesta.jpg"
+                  alt="blue ford fiesta car in front of a modern house"
+                  loading="lazy"
+                  height="80"
+                />
+              </td>
+              <td>&euro;55</td>
+              <td>&euro;100</td>
+              <td>&euro;135</td>
+            </tr>
+            <tr>
+              <td>BMW 3 Series</td>
+              <td>
+                <img
+                  src="images/bmw-3-series.jpg"
+                  alt="grey bmw 3 series car on the road"
+                  loading="lazy"
+                  height="80"
+                />
+              </td>
+              <td>&euro;80</td>
+              <td>&euro;150</td>
+              <td>&euro;210</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <section id="tips-and-tricks">
-            <h2>Tips &amp; Tricks</h2>
-            <p>Traveling can be an exhilarating adventure, but it's also essential to be prepared and organized to make the most of your journey. Here are some valuable tips and tricks to enhance your travel experience:</p>
-            <h4>Essential Travel Tips</h4>
-            <ol>
-                <li>Plan Ahead: Research your destination, including local customs, weather, and attractions, to make informed decisions and create a flexible itinerary.</li>
-                <li>Pack Wisely: Make a packing list to ensure you have everything you need for your trip, including essential documents, clothing for various weather conditions, and any necessary medications.</li>
-                <li>Stay Connected: Keep important contacts, such as embassy numbers and emergency contacts, handy. Additionally, consider purchasing a local SIM card or activating an international roaming plan to stay connected while abroad.</li>
-                <li>Budget Wisely: Set a realistic budget for your trip, including accommodations, transportation, meals, and activities. Look for deals and discounts to stretch your budget further.</li>
-                <li>Stay Safe: Be vigilant of your surroundings, keep your belongings secure, and follow local safety guidelines to ensure a safe and enjoyable trip.</li>
-            </ol>
-            <h4>Insider Travel Hacks</h4>
-            <ul>
-                <li>Roll Your Clothes: Maximize suitcase space and minimize wrinkles by rolling your clothes instead of folding them.</li>
-                <li>Bring a Power Bank: Keep your devices charged on the go with a portable power bank, especially useful for long flights or day trips.</li>
-                <li>Download Offline Maps: Save data and navigate with ease by downloading offline maps of your destination beforehand.</li>
-                <li>Learn Basic Phrases: Even knowing a few words in the local language can go a long way in communicating with locals and showing respect for their culture.</li>
-                <li>Pack a Reusable Water Bottle: Stay hydrated while reducing plastic waste by bringing a reusable water bottle and refilling it at water fountains or restaurants throughout your trip.</li>
-            </ul>
-            <p>By incorporating these tips into your travel routine, you can ensure a smoother, more enjoyable journey, whether you're exploring a new city, embarking on a hiking adventure, or relaxing on a beach getaway.</p>
-        </section>
+      <section id="tips-and-tricks">
+        <h2>Tips &amp; Tricks</h2>
+        <p>
+          Traveling can be an exhilarating adventure, but it's also essential to
+          be prepared and organized to make the most of your journey. Here are
+          some valuable tips and tricks to enhance your travel experience:
+        </p>
+        <h4>Essential Travel Tips</h4>
+        <ol>
+          <li>
+            Plan Ahead: Research your destination, including local customs,
+            weather, and attractions, to make informed decisions and create a
+            flexible itinerary.
+          </li>
+          <li>
+            Pack Wisely: Make a packing list to ensure you have everything you
+            need for your trip, including essential documents, clothing for
+            various weather conditions, and any necessary medications.
+          </li>
+          <li>
+            Stay Connected: Keep important contacts, such as embassy numbers and
+            emergency contacts, handy. Additionally, consider purchasing a local
+            SIM card or activating an international roaming plan to stay
+            connected while abroad.
+          </li>
+          <li>
+            Budget Wisely: Set a realistic budget for your trip, including
+            accommodations, transportation, meals, and activities. Look for
+            deals and discounts to stretch your budget further.
+          </li>
+          <li>
+            Stay Safe: Be vigilant of your surroundings, keep your belongings
+            secure, and follow local safety guidelines to ensure a safe and
+            enjoyable trip.
+          </li>
+        </ol>
+        <h4>Insider Travel Hacks</h4>
+        <ul>
+          <li>
+            Roll Your Clothes: Maximize suitcase space and minimize wrinkles by
+            rolling your clothes instead of folding them.
+          </li>
+          <li>
+            Bring a Power Bank: Keep your devices charged on the go with a
+            portable power bank, especially useful for long flights or day
+            trips.
+          </li>
+          <li>
+            Download Offline Maps: Save data and navigate with ease by
+            downloading offline maps of your destination beforehand.
+          </li>
+          <li>
+            Learn Basic Phrases: Even knowing a few words in the local language
+            can go a long way in communicating with locals and showing respect
+            for their culture.
+          </li>
+          <li>
+            Pack a Reusable Water Bottle: Stay hydrated while reducing plastic
+            waste by bringing a reusable water bottle and refilling it at water
+            fountains or restaurants throughout your trip.
+          </li>
+        </ul>
+        <p>
+          By incorporating these tips into your travel routine, you can ensure a
+          smoother, more enjoyable journey, whether you're exploring a new city,
+          embarking on a hiking adventure, or relaxing on a beach getaway.
+        </p>
+      </section>
 
-        <section id="journal">
-            <h2>Journal</h2>
+      <section id="journal">
+        <h2>Journal</h2>
 
-            <article>
-                <h3>Discovering the Wonders of Tokyo</h3>
-                <p>Written by John Doe, JourneyJoy Travel Client</p>
-                <p>Embarking on a journey to Tokyo organized by JourneyJoy Travel was an unforgettable experience. From the bustling streets of Shibuya to the tranquil gardens of Shinjuku, every moment was filled with excitement and wonder.</p>
+        <article>
+          <h3>Discovering the Wonders of Tokyo</h3>
+          <p>Written by John Doe, JourneyJoy Travel Client</p>
+          <p>
+            Embarking on a journey to Tokyo organized by JourneyJoy Travel was
+            an unforgettable experience. From the bustling streets of Shibuya to
+            the tranquil gardens of Shinjuku, every moment was filled with
+            excitement and wonder.
+          </p>
 
-                <h4>Immersing in Japanese Culture</h4>
-                <p>Exploring historic temples, attending traditional tea ceremonies, and indulging in authentic Japanese cuisine allowed us to immerse ourselves in the rich culture of Tokyo. The expert guidance and meticulous planning by the JourneyJoy Travel team ensured a seamless and enriching experience.</p>
-                <p>We'll <em>forever</em> cherish the memories of watching cherry blossoms bloom in Ueno Park, experiencing the vibrant energy of Tsukiji Fish Market, and admiring the panoramic views from the Tokyo Skytree. Thank you, JourneyJoy Travel, for making our Tokyo adventure truly unforgettable!</p>
+          <h4>Immersing in Japanese Culture</h4>
+          <p>
+            Exploring historic temples, attending traditional tea ceremonies,
+            and indulging in authentic Japanese cuisine allowed us to immerse
+            ourselves in the rich culture of Tokyo. The expert guidance and
+            meticulous planning by the JourneyJoy Travel team ensured a seamless
+            and enriching experience.
+          </p>
+          <p>
+            We'll <em>forever</em> cherish the memories of watching cherry
+            blossoms bloom in Ueno Park, experiencing the vibrant energy of
+            Tsukiji Fish Market, and admiring the panoramic views from the Tokyo
+            Skytree. Thank you, JourneyJoy Travel, for making our Tokyo
+            adventure truly unforgettable!
+          </p>
 
-                <h4>Navigating the City with Ease</h4>
-                <p>From navigating the efficient subway system to discovering hidden gems in the city's neighborhoods, JourneyJoy Travel provided us with valuable insights and tips that made exploring Tokyo a breeze. Their attention to detail and personalized recommendations truly enhanced our travel experience.</p>
+          <h4>Navigating the City with Ease</h4>
+          <p>
+            From navigating the efficient subway system to discovering hidden
+            gems in the city's neighborhoods, JourneyJoy Travel provided us with
+            valuable insights and tips that made exploring Tokyo a breeze. Their
+            attention to detail and personalized recommendations truly enhanced
+            our travel experience.
+          </p>
 
-                <h5>About the Author</h5>
-                <p>John Doe is an avid traveler and freelance writer based in New York. With a passion for discovering new destinations and immersing himself in different cultures, John enjoys sharing his travel experiences and insights to inspire others to embark on their own adventures. You can read his travel blog <a href="https://blogbox.netlify.app/about/" target="_blank">here</a>.</p>
-            </article>
+          <h5>About the Author</h5>
+          <p>
+            John Doe is an avid traveler and freelance writer based in New York.
+            With a passion for discovering new destinations and immersing
+            himself in different cultures, John enjoys sharing his travel
+            experiences and insights to inspire others to embark on their own
+            adventures. You can read his travel blog
+            <a href="https://blogbox.netlify.app/about/" target="_blank">here</a
+            >.
+          </p>
+        </article>
 
-            <article>
-                <h3>Embark on Pet-Friendly Adventures with JourneyJoy Travel</h3>
-                <p>Written by Emily Brown, Pet Travel Specialist at JourneyJoy Travel</p>
-                <p>At JourneyJoy Travel, we understand that pets are an important part of the family, and we're dedicated to making travel with your furry companions as seamless and enjoyable as possible. With our pet-friendly travel services, you can explore the world with your beloved pets by your side.</p>
+        <article>
+          <h3>Embark on Pet-Friendly Adventures with JourneyJoy Travel</h3>
+          <p>
+            Written by Emily Brown, Pet Travel Specialist at JourneyJoy Travel
+          </p>
+          <p>
+            At JourneyJoy Travel, we understand that pets are an important part
+            of the family, and we're dedicated to making travel with your furry
+            companions as seamless and enjoyable as possible. With our
+            pet-friendly travel services, you can explore the world with your
+            beloved pets by your side.
+          </p>
 
-                <h4>Exploring Pet-Friendly Destinations</h4>
-                <p>From pet-friendly accommodations to restaurants and attractions that welcome four-legged friends, we'll help you discover destinations that cater to both you and your pets. Whether it's a cozy cabin retreat in the mountains or a beachside resort where pets are pampered, we'll find the perfect getaway for you and your furry companions.</p>
-                <p>With our expertise in pet travel regulations and accommodations, you can rest assured that your pets will have a comfortable and stress-free journey. <b>We'll handle all the details, from booking pet-friendly accommodations to arranging pet transportation, so you can focus on creating unforgettable memories with your furry friends</b>.</p>
-                <p>To know what to expect, we suggest checking out the guidelines the European Union has for travelling with your pet <a href="https://europa.eu/youreurope/citizens/travel/carry/animal-plant/index_en.htm" target="_blank">here</a>.</p>
+          <h4>Exploring Pet-Friendly Destinations</h4>
+          <p>
+            From pet-friendly accommodations to restaurants and attractions that
+            welcome four-legged friends, we'll help you discover destinations
+            that cater to both you and your pets. Whether it's a cozy cabin
+            retreat in the mountains or a beachside resort where pets are
+            pampered, we'll find the perfect getaway for you and your furry
+            companions.
+          </p>
+          <p>
+            With our expertise in pet travel regulations and accommodations, you
+            can rest assured that your pets will have a comfortable and
+            stress-free journey.
+            <b
+              >We'll handle all the details, from booking pet-friendly
+              accommodations to arranging pet transportation, so you can focus
+              on creating unforgettable memories with your furry friends</b
+            >.
+          </p>
+          <p>
+            To know what to expect, we suggest checking out the guidelines the
+            European Union has for travelling with your pet
+            <a
+              href="https://europa.eu/youreurope/citizens/travel/carry/animal-plant/index_en.htm"
+              target="_blank"
+              >here</a
+            >.
+          </p>
 
-                <h5>About the Author</h5>
-                <p>Emily Brown is a Pet Travel Specialist at JourneyJoy Travel, dedicated to helping pet owners experience the joys of travel with their furry companions. With a passion for animals and years of experience in the travel industry, Emily is committed to providing personalized and pet-friendly travel solutions for adventurers of all kinds.</p>
-            </article>
+          <h5>About the Author</h5>
+          <p>
+            Emily Brown is a Pet Travel Specialist at JourneyJoy Travel,
+            dedicated to helping pet owners experience the joys of travel with
+            their furry companions. With a passion for animals and years of
+            experience in the travel industry, Emily is committed to providing
+            personalized and pet-friendly travel solutions for adventurers of
+            all kinds.
+          </p>
+        </article>
 
-            <article>
-                <h3>Discovering the Charms of Paris</h3>
-                <p>Written by Maria Rodriguez, JourneyJoy Travel Client</p>
-                <p>My trip to Paris organized by JourneyJoy Travel was an unforgettable experience that exceeded all my expectations. From the iconic landmarks to the hidden gems, every moment was filled with beauty and enchantment.</p>
+        <article>
+          <h3>Discovering the Charms of Paris</h3>
+          <p>Written by Maria Rodriguez, JourneyJoy Travel Client</p>
+          <p>
+            My trip to Paris organized by JourneyJoy Travel was an unforgettable
+            experience that exceeded all my expectations. From the iconic
+            landmarks to the hidden gems, every moment was filled with beauty
+            and enchantment.
+          </p>
 
-                <h4>A Parisian Adventure</h4>
-                <p>Exploring the romantic streets of Montmartre, indulging in exquisite pastries at charming cafes, and admiring the breathtaking views from the top of the Eiffel Tower made this trip truly magical. The expert guidance and personalized recommendations from JourneyJoy Travel ensured that every aspect of my journey was perfect.</p>
-                <p>I'll forever cherish the memories of strolling along the Seine River at sunset, marveling at the grandeur of the Louvre Museum, and savoring gourmet meals in cozy bistros. <span>THANK YOU</span>, JourneyJoy Travel, for making my dream of experiencing Paris a reality!</p>
+          <h4>A Parisian Adventure</h4>
+          <p>
+            Exploring the romantic streets of Montmartre, indulging in exquisite
+            pastries at charming cafes, and admiring the breathtaking views from
+            the top of the Eiffel Tower made this trip truly magical. The expert
+            guidance and personalized recommendations from JourneyJoy Travel
+            ensured that every aspect of my journey was perfect.
+          </p>
+          <p>
+            I'll forever cherish the memories of strolling along the Seine River
+            at sunset, marveling at the grandeur of the Louvre Museum, and
+            savoring gourmet meals in cozy bistros. <span>THANK YOU</span>,
+            JourneyJoy Travel, for making my dream of experiencing Paris a
+            reality!
+          </p>
 
-                <h4>Unforgettable Moments</h4>
-                <p>From watching the sunset from the steps of Sacré-Cœur to cruising along the Seine River, every moment in Paris was filled with wonder and joy. The city's timeless beauty and rich history captivated my heart, leaving me longing to return again someday.</p>
-                <p>One highlight of the trip was exploring the charming neighborhood of Le Marais, with its cobblestone streets, trendy boutiques, and historic landmarks. It felt like stepping back in time while also experiencing the vibrant energy of modern-day Paris.</p>
+          <h4>Unforgettable Moments</h4>
+          <p>
+            From watching the sunset from the steps of Sacré-Cœur to cruising
+            along the Seine River, every moment in Paris was filled with wonder
+            and joy. The city's timeless beauty and rich history captivated my
+            heart, leaving me longing to return again someday.
+          </p>
+          <p>
+            One highlight of the trip was exploring the charming neighborhood of
+            Le Marais, with its cobblestone streets, trendy boutiques, and
+            historic landmarks. It felt like stepping back in time while also
+            experiencing the vibrant energy of modern-day Paris.
+          </p>
 
-                <h5>About the Author</h5>
-                <p>Maria Rodriguez is a passionate traveler and art enthusiast based in Sydney. With a love for exploring new cultures and immersing herself in local experiences, Maria enjoys sharing her travel adventures and insights to inspire others to embark on their own journeys of discovery. Check out her Instagram page <a href="https://www.instagram.com/mariadrig/" target="_blank">here</a>.</p>
-            </article>
+          <h5>About the Author</h5>
+          <p>
+            Maria Rodriguez is a passionate traveler and art enthusiast based in
+            Sydney. With a love for exploring new cultures and immersing herself
+            in local experiences, Maria enjoys sharing her travel adventures and
+            insights to inspire others to embark on their own journeys of
+            discovery. Check out her Instagram page
+            <a href="https://www.instagram.com/mariadrig/" target="_blank"
+              >here</a
+            >.
+          </p>
+        </article>
 
-            <article>
-                <h3>An Exclusive Interview with Sarah Johnson, Founder of JourneyJoy Travel</h3>
-                <p>Interviewed by Jessica Hayes, Travel News Journalist</p>
-                
-                <h4>Jessica Hayes: Can you tell us about the inspiration behind starting JourneyJoy Travel?</h4>
-                <p>Sarah Johnson: Absolutely. My passion for travel and my love for animals inspired me to create JourneyJoy Travel. As a pet owner myself, I understand the challenges of traveling with pets and wanted to provide a solution for fellow pet lovers. I envisioned a travel agency that not only caters to the needs of pet owners but also offers personalized and memorable travel experiences for all our clients.</p>
-                
-                <h4>JH: What sets JourneyJoy Travel apart from other travel agencies?</h4>
-                <p>SJ: At JourneyJoy Travel, we pride ourselves on our commitment to pet-friendly travel and our dedication to creating tailored experiences for every traveler. Our team consists of passionate pet owners and travel enthusiasts who understand the importance of attention to detail and personalized service. We go above and beyond to ensure that each trip is carefully planned and seamlessly executed, from finding pet-friendly accommodations to recommending unique experiences that cater to our clients' interests and preferences.</p>
-                <p>Furthermore, our focus on sustainability sets us apart. We strive to promote eco-friendly travel practices and partner with eco-conscious suppliers to minimize our environmental impact. By combining pet-friendly travel with sustainable tourism, we offer a unique and responsible approach to exploring the world. For those who are new to the topic of sustainable travel, I always recommend reading <a href="https://www.nytimes.com/2021/04/22/travel/sustainable-travel.html" target="_blank">this</a> article from the <em>New York Times</em>.</p>
-                
-                <h4>JH: What can clients expect when booking a trip with JourneyJoy Travel?</h4>
-                <p>SJ: When clients book a trip with JourneyJoy Travel, they can expect exceptional service, personalized recommendations, and unforgettable experiences. <b>We take the time to understand our clients' needs and preferences, whether they're traveling with pets, seeking adventure, or looking for a relaxing getaway</b>.</p>
-                <p>From pet-friendly accommodations and curated itineraries to exclusive access to local experiences, we strive to exceed our clients' expectations at every step of their journey. Our goal is to create lasting memories and inspire a sense of joy and wonder in every traveler who chooses to explore the world with us.</p>
-                
-                <h3>About the Author</h3>
-                <p>Jessica Hayes is a seasoned travel journalist with a passion for exploring new destinations and uncovering unique stories. With years of experience in the travel industry, Jessica specializes in reporting on emerging trends, sustainable tourism, and memorable travel experiences. Her articles inspire and inform readers, guiding them on their own journeys of discovery around the world.</p>
-            </article>
-        </section>
+        <article>
+          <h3>
+            An Exclusive Interview with Sarah Johnson, Founder of JourneyJoy
+            Travel
+          </h3>
+          <p>Interviewed by Jessica Hayes, Travel News Journalist</p>
+
+          <h4>
+            Jessica Hayes: Can you tell us about the inspiration behind starting
+            JourneyJoy Travel?
+          </h4>
+          <p>
+            Sarah Johnson: Absolutely. My passion for travel and my love for
+            animals inspired me to create JourneyJoy Travel. As a pet owner
+            myself, I understand the challenges of traveling with pets and
+            wanted to provide a solution for fellow pet lovers. I envisioned a
+            travel agency that not only caters to the needs of pet owners but
+            also offers personalized and memorable travel experiences for all
+            our clients.
+          </p>
+
+          <h4>
+            JH: What sets JourneyJoy Travel apart from other travel agencies?
+          </h4>
+          <p>
+            SJ: At JourneyJoy Travel, we pride ourselves on our commitment to
+            pet-friendly travel and our dedication to creating tailored
+            experiences for every traveler. Our team consists of passionate pet
+            owners and travel enthusiasts who understand the importance of
+            attention to detail and personalized service. We go above and beyond
+            to ensure that each trip is carefully planned and seamlessly
+            executed, from finding pet-friendly accommodations to recommending
+            unique experiences that cater to our clients' interests and
+            preferences.
+          </p>
+          <p>
+            Furthermore, our focus on sustainability sets us apart. We strive to
+            promote eco-friendly travel practices and partner with eco-conscious
+            suppliers to minimize our environmental impact. By combining
+            pet-friendly travel with sustainable tourism, we offer a unique and
+            responsible approach to exploring the world. For those who are new
+            to the topic of sustainable travel, I always recommend reading
+            <a
+              href="https://www.nytimes.com/2021/04/22/travel/sustainable-travel.html"
+              target="_blank"
+              >this</a
+            >
+            article from the <em>New York Times</em>.
+          </p>
+
+          <h4>
+            JH: What can clients expect when booking a trip with JourneyJoy
+            Travel?
+          </h4>
+          <p>
+            SJ: When clients book a trip with JourneyJoy Travel, they can expect
+            exceptional service, personalized recommendations, and unforgettable
+            experiences.
+            <b
+              >We take the time to understand our clients' needs and
+              preferences, whether they're traveling with pets, seeking
+              adventure, or looking for a relaxing getaway</b
+            >.
+          </p>
+          <p>
+            From pet-friendly accommodations and curated itineraries to
+            exclusive access to local experiences, we strive to exceed our
+            clients' expectations at every step of their journey. Our goal is to
+            create lasting memories and inspire a sense of joy and wonder in
+            every traveler who chooses to explore the world with us.
+          </p>
+
+          <h3>About the Author</h3>
+          <p>
+            Jessica Hayes is a seasoned travel journalist with a passion for
+            exploring new destinations and uncovering unique stories. With years
+            of experience in the travel industry, Jessica specializes in
+            reporting on emerging trends, sustainable tourism, and memorable
+            travel experiences. Her articles inspire and inform readers, guiding
+            them on their own journeys of discovery around the world.
+          </p>
+        </article>
+      </section>
     </main>
     <footer>
-        <address>
-            <a href="mailto:info@joyjourney.com">info@joyjourney.com</a>
-            <a href="tel:+14155550666">+1 (415) 555‑0666</a>
-            <p>123 Adventure Avenue</p>
-            <p>Explorer's City, Wanderland</p>
-            <p>Traveler's Realm, TRP 45678</p>
-            <p>United Journeys</p>
-        </address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.789563925561!2d25.316509576735044!3d54.90661567278268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94055529fabf%3A0x225e24d55edd01d5!2sThe%20Geographical%20Centre%20Of%20Europe!5e0!3m2!1sen!2slt!4v1708522450973!5m2!1sen!2slt" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="where to find us"></iframe>
-        <p>&copy; 2024 JourneyJoy Travel, Inc. All rights reserved.</p>
+      <address>
+        <a href="mailto:info@joyjourney.com">info@joyjourney.com</a>
+        <a href="tel:+14155550666">+1 (415) 555‑0666</a>
+        <p>123 Adventure Avenue</p>
+        <p>Explorer's City, Wanderland</p>
+        <p>Traveler's Realm, TRP 45678</p>
+        <p>United Journeys</p>
+      </address>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.789563925561!2d25.316509576735044!3d54.90661567278268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94055529fabf%3A0x225e24d55edd01d5!2sThe%20Geographical%20Centre%20Of%20Europe!5e0!3m2!1sen!2slt!4v1708522450973!5m2!1sen!2slt"
+        width="300"
+        height="150"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="where to find us"
+      ></iframe>
+      <p>&copy; 2024 JourneyJoy Travel, Inc. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
