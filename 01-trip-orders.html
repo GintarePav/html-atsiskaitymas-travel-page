@@ -1,146 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JourneyJoy Travel: Order</title>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <a href="_index.html"><img src="images/logo.png" alt="green, blue and brown lines forming a wing" height="50"/></a>
-        <!-- istrinti height atributa kai rasysiu css -->
-        <h1>JourneyJoy Travel</h1>
-        <nav>
-            <ul>
-                <li>Order a Trip</li> 
-                <li><a href="/02-login.html">Login</a></li>
-                <li><a href="/03-personal-blog.html">Personal Blog</a></li>
-            </ul>
-        </nav>
+      <nav
+        class="navbar fixed-top navbar-expand-lg"
+        style="background-color: #e3f2fd"
+      >
+        <div class="navbar-brand navbar-logo-container ms-3">
+          <a href="_index.html"
+            ><img src="/images/logo.png" class="img" alt="logo" loading="lazy"
+          /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown ps-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-current="page"
+              >
+                Home
+              </a>
+              <ul class="dropdown-menu me-3">
+                <li>
+                  <a class="dropdown-item" href="_index.html#travel-ideas"
+                    >Travel Ideas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="_index.html#rental">Rental</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="_index.html#tips-and-tricks"
+                    >Tips &amp; Tricks</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="_index.html#journal"
+                    >Journal</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link" href="01-trip-orders.html">Order a Trip</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link" href="02-login.html">Login</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link" href="03-personal-blog.html">Personal Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="_index.html#travel-ideas">Travel Ideas</a></li>
-                <li><a href="_index.html#rental">Rental</a></li>
-                <li><a href="_index.html#tips-and-tricks">Tips &amp; Tricks</a></li>
-                <li><a href="_index.html#journal">Journal</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <main>
+    <main class="curve">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center flex-warp"
+      >
+        <h2 class="text-center mb-5 section-margin">Travel Plan Order Form</h2>
         <form>
-            <fieldset>
-                <legend>Travel Plan Order Form</legend>
-
-                <fieldset>
-                    <legend>Contact Details</legend>
-                    <label for="full-name">Full name:</label>
-                    <input type="text" id="full-name" name="full-name" required/>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required/>
-
-                    <label for="phone">Phone number:</label>
-                    <input type="tel" id="phone" name="phone" required/>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Trip Details</legend>
-
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" required/>
-
-                    <label for="people-number">Number of people:</label>
-                    <input type="number" id="people-number" name="people-number" required/>
-
-                    <label for="children-number">Children:</label>
-                    <input type="number" id="children-number" name="children-number" required/>
-
-                    <label>Continent:</label>
-                    <input type="radio" id="europe" name="continent" value="europe"/>
-                    <label for="europe">Europe</label>
-
-                    <input type="radio" id="north-america" name="continent" value="north-america"/>
-                    <label for="north-america">North America</label>
-
-                    <input type="radio" id="south-america" name="continent" value="south-america"/>
-                    <label for="south-america">South America</label>
-
-                    <input type="radio" id="asia" name="continent" value="asia"/>
-                    <label for="asia">Asia</label>
-
-                    <input type="radio" id="africa" name="continent" value="africa"/>
-                    <label for="africa">Africa</label>
-
-                    <label>Personal requirements:</label>
-                    <input type="checkbox" id="none" name="requirements" value="none"/>
-                    <label for="none">None</label>
-
-                    <input type="checkbox" id="accessibility" name="requirements" value="accessibility"/>
-                    <label for="accessibility">Accessibility-friendly</label>
-
-                    <input type="checkbox" id="child" name="requirements" value="child-friendly"/>
-                    <label for="child">Child-friendly</label>
-
-                    <input type="checkbox" id="pet" name="requirements" value="pet-friendly"/>
-                    <label for="pet">Pet-friendly</label>
-
-                    <input type="checkbox" id="eco" name="requirements" value="eco-friendly"/>
-                    <label for="eco">Eco-friendly</label>
-
-                    <input type="checkbox" id="vegan" name="requirements" value="vegan"/>
-                    <label for="vegan">Vegan</label>
-
-                    <input type="checkbox" id="organic" name="requirements" value="organic"/>
-                    <label for="organic">Organic</label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Transportation</legend>
-                    <label for="transport-type">Type:</label>
-                    <select id="transport-type" required>
-                        <option value="">--select--</option>
-                        <option value="plane">Plane</option>
-                        <option value="train">Train</option>
-                        <option value="bus">Bus</option>
-                        <option value="ship">Ship</option>
-                    </select>
-
-                    <label for="class">Class:</label>
-                    <select id="class" required>
-                        <option value="">--select--</option>
-                        <option value="first">1st</option>
-                        <option value="second">2nd</option>
-                    </select>
-
-                    <label for="luggage">Luggage:</label>
-                    <select id="luggage" required>
-                        <option value="">--select--</option>
-                        <option value="none">None</option>
-                        <option value="hand-luggage-only">Hand luggage only</option>
-                        <option value="hand-and-hold-luggage">Hand and hold luggage</option>
-                    </select>
-                </fieldset>
-
-                <label for="comments">Comments:</label>
-                <textarea id="comments" cols="40" rows="5" placeholder="Any additional information we should know..."></textarea>
-
-                <button type="submit" formaction="_index.html">Submit</button>
-            </fieldset>
+          <h4 class="text-center m-3">Contact Details</h4>
+          <div class="row d-flex flex-row justify-content-center">
+            <div class="col-md-3 col-sm-10 m-3">
+              <label class="form-label" for="full-name">Full name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="full-name"
+                name="full-name"
+                required
+              />
+            </div>
+            <div class="col-md-3 col-sm-10 m-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="col-md-3 col-sm-10 m-3">
+              <label for="phone" class="form-label">Phone number:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                required
+              />
+            </div>
+          </div>
+          <h4 class="text-center m-3">Trip Details</h4>
+          <div class="row d-flex flex-row justify-content-center">
+            <div class="col-md-3 col-sm-10 m-3">
+              <label for="date" class="form-label">Date:</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date"
+                name="date"
+                required
+              />
+            </div>
+            <div class="col-md-3 col-sm-10 m-3">
+              <label for="people-number" class="form-label"
+                >Number of people:</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="people-number"
+                name="people-number"
+                required
+              />
+            </div>
+            <div class="col-md-3 col-sm-10 m-3">
+              <label for="children-number" class="form-label">Children:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="children-number"
+                name="children-number"
+                required
+              />
+            </div>
+          </div>
+          <div
+            class="row d-flex flex-row justify-content-center align-items-start my-3"
+          >
+            <div class="col-md-5 col-sm-10 mb-3">
+              <label>Continent:</label>
+              <div class="m-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="europe"
+                  name="continent"
+                  value="europe"
+                />
+                <label class="form-check-label" for="europe">Europe</label>
+              </div>
+              <div class="m-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="north-america"
+                  name="continent"
+                  value="north-america"
+                />
+                <label class="form-check-label" for="north-america"
+                  >North America</label
+                >
+              </div>
+              <div class="m-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="south-america"
+                  name="continent"
+                  value="south-america"
+                />
+                <label class="form-check-label" for="south-america"
+                  >South America</label
+                >
+              </div>
+              <div class="m-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="asia"
+                  name="continent"
+                  value="asia"
+                />
+                <label class="form-check-label" for="asia">Asia</label>
+              </div>
+              <div class="m-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="africa"
+                  name="continent"
+                  value="africa"
+                />
+                <label class="form-check-label" for="africa">Africa</label>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-10">
+              <label>Personal requirements:</label>
+              <div class="m-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="none"
+                  name="requirements"
+                  value="none"
+                />
+                <label for="none" class="form-check-label">None</label>
+              </div>
+              <div class="m-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="accessibility"
+                  name="requirements"
+                  value="accessibility"
+                />
+                <label for="accessibility" class="form-check-label"
+                  >Accessibility-friendly</label
+                >
+              </div>
+              <div class="m-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="child"
+                  name="requirements"
+                  value="child-friendly"
+                />
+                <label for="child" class="form-check-label"
+                  >Child-friendly</label
+                >
+              </div>
+              <div class="m-3">
+                <input
+                  type="checkbox"
+                  id="pet"
+                  class="form-check-input"
+                  name="requirements"
+                  value="pet-friendly"
+                />
+                <label for="pet" class="form-check-label">Pet-friendly</label>
+              </div>
+              <div class="m-3">
+                <input
+                  type="checkbox"
+                  id="eco"
+                  class="form-check-input"
+                  name="requirements"
+                  value="eco-friendly"
+                />
+                <label for="eco" class="form-check-label">Eco-friendly</label>
+              </div>
+              <div class="m-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="vegan"
+                  name="requirements"
+                  value="vegan"
+                />
+                <label for="vegan" class="form-check-label">Vegan</label>
+              </div>
+              <div class="m-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="organic"
+                  name="requirements"
+                  value="organic"
+                />
+                <label for="organic" class="form-check-label">Organic</label>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-center m-3">Transportation</h4>
+          <div class="row d-flex flex-row justify-content-center">
+            <div class="col-md-3 col-sm-10 m-3">
+              <label class="form-label" for="transport-type">Type:</label>
+              <select class="form-select" id="transport-type" required>
+                <option value="">--select--</option>
+                <option value="plane">Plane</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="ship">Ship</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-sm-10 m-3">
+              <label class="form-label" for="class">Class:</label>
+              <select class="form-select" id="class" required>
+                <option value="">--select--</option>
+                <option value="first">1st</option>
+                <option value="second">2nd</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-sm-10 m-3">
+              <label class="form-label" for="luggage">Luggage:</label>
+              <select class="form-select" id="luggage" required>
+                <option value="">--select--</option>
+                <option value="none">None</option>
+                <option value="hand-luggage-only">Hand luggage only</option>
+                <option value="hand-and-hold-luggage">
+                  Hand and hold luggage
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row d-flex flex-row justify-content-center">
+            <div class="col-md-10 m-3">
+              <label class="form-label" for="comments">Comments:</label>
+              <textarea
+                id="comments"
+                class="form-control"
+                cols="40"
+                rows="5"
+                placeholder="Any additional information we should know..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="row d-flex flex-row justify-content-center">
+            <div class="col-md-10 m-3">
+              <button
+                type="submit"
+                class="btn btn-primary w-100 mb-3"
+                formaction="_index.html"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
         </form>
+      </div>
     </main>
-    <footer>
-        <address>
-            <a href="mailto:info@joyjourney.com">info@joyjourney.com</a>
-            <a href="tel:+14155550666">+1 (415) 555‑0666</a>
-            <p>123 Adventure Avenue</p>
-            <p>Explorer's City, Wanderland</p>
-            <p>Traveler's Realm, TRP 45678</p>
-            <p>United Journeys</p>
+    <footer class="footer">
+      <div class="address-container">
+        <address class="address">
+          <p>
+            <a href="mailto:info@joyjourney.com" class="footer-link"
+              >info@joyjourney.com</a
+            >
+          </p>
+          <p>
+            <a href="tel:+14155550666" class="footer-link">+1 (415) 555‑0666</a>
+          </p>
+          <p>123 Adventure Avenue</p>
+          <p>Explorer's City, Wanderland</p>
+          <p>Traveler's Realm, TRP 45678</p>
+          <p>United Journeys</p>
         </address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.789563925561!2d25.316509576735044!3d54.90661567278268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94055529fabf%3A0x225e24d55edd01d5!2sThe%20Geographical%20Centre%20Of%20Europe!5e0!3m2!1sen!2slt!4v1708522450973!5m2!1sen!2slt" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="where to find us"></iframe>
-        <p>&copy; 2024 JourneyJoy Travel, Inc. All rights reserved.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.789563925561!2d25.316509576735044!3d54.90661567278268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94055529fabf%3A0x225e24d55edd01d5!2sThe%20Geographical%20Centre%20Of%20Europe!5e0!3m2!1sen!2slt!4v1708522450973!5m2!1sen!2slt"
+          class="map"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="where to find us"
+        ></iframe>
+      </div>
+      <p class="copy">
+        &copy; 2024 JourneyJoy Travel, Inc. All rights reserved.
+      </p>
     </footer>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
